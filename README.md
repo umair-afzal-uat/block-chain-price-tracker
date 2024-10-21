@@ -1,73 +1,112 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Block Chain Price Tracker
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Overview
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+The Block Chain Price Tracker is a NestJS application that allows users to track cryptocurrency prices in real-time. This project utilizes various technologies to provide a robust and efficient solution for monitoring blockchain prices.
 
-## Description
+## Features
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- Real-time tracking of cryptocurrency prices
+- Email notifications using Mailgun
+- Data storage using PostgreSQL
+
+## Technologies Used
+
+- **Backend Framework:** NestJS
+- **Database:** PostgreSQL
+- **Email Service:** Mailgun
+- **Blockchain Integration:** Moralis
 
 ## Installation
 
-```bash
-$ npm install
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- Node.js (v14 or later)
+- PostgreSQL
+- npm (Node Package Manager)
+
+### Environment Variables
+
+Create a `.env` file in the root of your project and add the following variables:
+
+```env
+DB_HOST=
+DB_PORT=
+DB_USERNAME=
+DB_PASSWORD=
+DB_NAME=
+MAILGUN_API_KEY=
+MAILGUN_DOMAIN=
+MORALIS_API_KEY=
 ```
 
-## Running the app
+### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/umair-afzal-uat/blockchain-price-tracker.git
+   cd block-chain-price-tracker
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+4. Start the application:
+
+   For development:
+   ```bash
+   npm run start:dev
+   ```
+
+   For production:
+   ```bash
+   npm run start:prod
+   ```
+
+## Scripts
+
+| Command            | Description                               |
+|--------------------|-------------------------------------------|
+| `npm run build`    | Compiles the TypeScript code             |
+| `npm run start`    | Starts the application in development mode|
+| `npm run start:prod`| Starts the application in production mode|
+| `npm run lint`     | Lints the code using ESLint              |
+| `npm run test`     | Runs unit tests                          |
+| `npm run test:cov` | Runs tests and collects coverage         |
+
+## Running Tests
+
+To run tests, use:
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm run test
 ```
 
-## Test
+To watch for changes and re-run tests:
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+npm run test:watch
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the [MIT](LICENSE) license.
+
+## Author
+
+Umair Afzal
+```
+
+Feel free to modify any sections as needed, especially the overview, features, and author information!
